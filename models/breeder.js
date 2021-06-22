@@ -9,4 +9,4 @@ const breederSchema = new mongoose.Schema({
     googleId : String
 })
 
-module.export = mongoose.model('Breeder', breederSchema)
+module.exports = mongoose.model('Breeder', breederSchema)

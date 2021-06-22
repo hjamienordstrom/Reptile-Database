@@ -18,7 +18,7 @@ passport.use(new GoogleStrategy({
       } else {
         // we have a new student via OAuth!
         var newBreeder = new Breeder({
-          name: profile.name,
+          name: profile._json.name,
           email: profile.emails[0].value,
           password:profile.password,
           googleId: profile.id
