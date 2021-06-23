@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reptiles</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Species</th>
+        <th>Morph</th>
+        <th>Sex</th>
+        <th>Age</th>
+        <th>Lay Date</th>
+        <th>Hatch Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% reptiles.forEach(function(r) { %>
+        <tr>
+          <td><%= r.species %></td>
+          <td><%= r.morph %></td>
+          <td><%= r.sex %></td>
+          <td><%= r.age %></td>
+          <td><%= r.layDate %></td>
+          <td><%= r.hatchDate %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>

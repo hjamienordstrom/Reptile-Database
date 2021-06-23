@@ -18,6 +18,7 @@ require('./config/database');
 // configure Passport
 require('./config/passport');
 var indexRoutes = require('./routes/index');
+var reptilesRoutes = require('./routes/reptiles');
 
 
 
@@ -50,6 +51,7 @@ app.use(function (req, res, next) {
 });
 
 // mount all routes with appropriate base paths
+app.use('/reptiles', reptilesRoutes);
 app.use('/', indexRoutes);
 
 
