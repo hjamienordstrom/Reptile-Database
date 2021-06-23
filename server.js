@@ -45,7 +45,7 @@ app.use(passport.session());
 
 // Add this middleware BELOW passport middleware
 app.use(function (req, res, next) {
-  res.locals.breeder = req.breeder; // assinging a property to res.locals, makes that said property (user) availiable in every
+  res.locals.breeder = req.user; // assinging a property to res.locals, makes that said property (user) availiable in every
   // single ejs view
   next();
 });
