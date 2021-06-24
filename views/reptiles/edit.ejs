@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h2>Update Reptile</h2>
+<form action='/reptiles/<%=reptile._id %>?_method=PUT' method='POST'>
+    <label>Species
+        <select name="species">
+            <option value="Ball Python">Ball Python</option>
+            <option value="Bearded Dragon">Bearded Dragon</option>
+            <option value="Tegu">Tegu</option>
+            <option value="Corn Snake">Corn Snake</option>
+            <option value="Tortise">Tortise</option>
+            <option value="Iguana">Iguana</option>
+            <option value="Green Tree Python">Green Tree Python</option>
+          </select>
+      </label><br>
+      <label>Morph
+        <input type="text" value="" name="morph">
+      </label><br>
+      <label>Sex
+        <select name="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+      </label><br>
+      <label>Age
+        <input type="number" name="age" >
+      </label><br>
+      <label>Lay Date 
+        <input type="datetime-local" name="layDate">
+      </label><br>
+      <label>Hatch Date
+        <input type="datetime-local" name="hatchDate">
+      </label><br>
+      <input type="submit" value="Update">
+</body>
+</html>

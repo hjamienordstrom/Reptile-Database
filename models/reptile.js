@@ -8,6 +8,7 @@ const reptileSchema = new Schema({
     age: Number, 
     layDate: Date, 
     hatchDate: Date, 
+    breeder: {type: Schema.Types.ObjectId, ref:'Breeder'}
 })
 
 const Reptile = mongoose.model('Reptile', reptileSchema);

@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+  
 <div id='homepage'>
   <div id='nav-bar'>
+    <h1>My Reptiles</h1>
     <a href="/reptiles/new">Add Reptile</a>
     <a href="/logout">Log Out</a>
   </div>
   <div id='information'>
-    <h1>My Reptiles</h1>
     <div id='content'>
       <% reptiles.forEach(r => { %>
         <div id="main">
@@ -45,9 +45,7 @@
             <p class='attributes'><%= r.hatchDate %> </p>
           </div>
           <div id='card-nav'>
-            <form action="/reptiles/<%=r.id%>?_method=DELETE" class="nav-button" method="POST">
-              <button type="submit">Edit</button>
-            </form>
+              <a type="submit" href='/reptiles/<%=r._id%>/edit'>Edit</a>
             <form action="/reptiles/<%=r.id%>?_method=DELETE" class="nav-button" method="POST">
               <button type="submit">Delete</button>
             </form>
