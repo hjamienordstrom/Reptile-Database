@@ -4,33 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Document</title>
 </head>
 <body>
-    <h1>Reptiles</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Species</th>
-        <th>Morph</th>
-        <th>Sex</th>
-        <th>Age</th>
-        <th>Lay Date</th>
-        <th>Hatch Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% reptiles.forEach(function(r) { %>
-        <tr>
-          <td><%= r.species %></td>
-          <td><%= r.morph %></td>
-          <td><%= r.sex %></td>
-          <td><%= r.age %></td>
-          <td><%= r.layDate %></td>
-          <td><%= r.hatchDate %></td>
-        </tr>
+    
+<div id='homepage'>
+  <div id='nav-bar'>
+    <a href="/reptiles/new">Add Reptile</a>
+    <a href="/logout">Log Out</a>
+  </div>
+  <div id='information'>
+    <h1>My Reptiles</h1>
+    <div id='content'>
+      <% reptiles.forEach(r => { %>
+        <div id="main">
+          
+          <div id='label'>
+            <p class='type'>Species</p>
+            <p class='attributes'><%= r.species %> </p>
+          </div>
+          <div id='label'>
+            <p class='type'>Morph</p>
+            <p class='attributes'><%= r.morph %> </p>
+          </div>
+          <div id='label'>
+            <p class='type'>Sex</p>
+            <p class='attributes'><%= r.sex %> </p>
+          </div>
+          <div id='label'>
+            <p class='type'>Age</p>
+            <p class='attributes'><%= r.age %> </p>
+          </div>
+          <div id='label'>
+            <p class='type'>Lay Date</p>
+            <p class='attributes'><%= r.layDate %> </p>
+          </div>
+          <div id='label'>
+            <p class='type'>Hatch Date</p>
+            <p class='attributes'><%= r.hatchDate %> </p>
+          </div>
+          <div id='card-nav'>
+            <form action="/reptiles/<%=r.id%>?_method=DELETE" class="nav-button" method="POST">
+              <button type="submit">Edit</button>
+            </form>
+            <form action="/reptiles/<%=r.id%>?_method=DELETE" class="nav-button" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+          </div>
+        </div>
       <% }) %>
-    </tbody>
-  </table>
+      </div>
+  </div>
+ </div> 
+     
+  
 </body>
 </html>

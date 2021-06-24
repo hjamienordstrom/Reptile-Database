@@ -1,20 +1,67 @@
-.brand-logo {
-  margin-left: 15px;
+#main{
+  background:rgb(98, 98, 240);
+  height:225px;
+  width:225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 12px;
+  padding: 20px;
+
 }
 
-.card .card-content .card-title {
-  margin-bottom: 10px;
+.attributes{
+  line-height: 1;
 }
 
-#search-row form {
-  padding-top: 20px;
+#label{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.student-name {
-  position: relative;
-  top: -5px;
+#content{
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-.collection-item form {
-  margin-top: -5px;
+#card-nav{
+  height: 40px;
+  width: 100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items: flex-end;
+}
+
+#homepage{
+  background-color:crimson;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  
+}
+
+#nav-bar{
+  background-color: darkgoldenrod;
+  width: 15%;
+  height:100%;
+}
+
+#information{
+  background-color: darkseagreen;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1{
+  width: 100%;
 }

@@ -3,8 +3,8 @@ const Reptile = require('../models/reptile')
 module.exports = {
     index, 
     new:newReptile, 
-    create
-
+    create,
+    delete:deleteReptile
 }
 
 function newReptile(req,res){
@@ -24,4 +24,9 @@ function create(req,res){
         console.log(reptileDocument, 'our doc')
         res.redirect('/reptiles')
     })
+}
+
+function deleteReptile(req,res){
+   Reptile.deleteOne(req.params.id);
+   res.redirect('/reptiles')
 }
