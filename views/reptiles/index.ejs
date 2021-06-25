@@ -53,7 +53,9 @@
             <form action="/reptiles/<%=r.id%>/comment" method="POST" class='nav-button'>
               <input type="text" name="comment" placeholder="Add notes"/>
             </form>
-              <a type="submit" href='/reptiles/<%=r._id%>/edit'>Edit</a>
+            <form action="/reptiles/<%=r.id%>/edit" method="PUT" class="nav-button" >
+              <button type="submit">Edit</button>
+            </form>
             <form action="/reptiles/<%=r.id%>?_method=DELETE" class="nav-button" method="POST">
               <button type="submit">Delete</button>
             </form>
