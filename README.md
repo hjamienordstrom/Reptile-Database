@@ -3,7 +3,9 @@
 Most reptile breeders use pen and paper to keep track of their reptiles, the purpose of this app was to digitize their collection for easy access. 
 
 Screenshots
-    
+    <img src='public/images/homepage.png' width="450" height="350">
+    <img src='public/images/Login.png' width="450" height="350">
+    <img src='public/images/NewReptile.png' width="450" height="350">
 
 Technologies Used
     HTML
@@ -27,13 +29,5 @@ Icebox
     Limit the breeder so they are only able to see the reptiles they created
     Create a feeding feature so each reptiles feeding schedule/diet can be recorded
 
-App Title: Contains a description of what the app does and optional background info.
 
-☐ Screenshot(s): A screenshot of your app's landing page and any other screenshots of interest.
-
-☐ Technologies Used: List of the technologies used.
-
-☐ Getting Started: Include a link to the deployed app and your Trello board with the project's planning.
-
-☐ Next Steps: Planned future enhancements (icebox items).
 
