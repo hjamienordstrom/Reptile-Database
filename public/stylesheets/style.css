@@ -1,7 +1,7 @@
 #main{
-  background:rgb(98, 98, 240);
-  height:225px;
-  width:225px;
+  background:rgb(156, 156, 252);
+  height:250px;
+  width:250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   margin-right: 20px;
   border-radius: 12px;
   padding: 20px;
-
+  outline:2px black ;
 }
 
 .attributes{
@@ -39,7 +39,7 @@
 }
 
 #homepage{
-  background-color:crimson;
+  background-color:white;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -47,26 +47,28 @@
 }
 
 #nav-bar{
-  background-color: darkgoldenrod;
+  background-color: rgb(156, 156, 252);
   width: 15%;
   height:100%;
 }
 
 #information{
-  background-color: darkseagreen;
+  background-color: white;
   width: 85%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border: black;
 }
 
 h1{
   width: 100%;
+  align-content: center;
 }
 
 #login{
-  background-color: orange;
+  background-color: rgb(156, 156, 252);
   color: black;
   border-radius: 50%;
   text-decoration: none;

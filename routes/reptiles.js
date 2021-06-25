@@ -8,6 +8,7 @@ router.get('/',reptilesCtrl.index);
 router.delete('/:id', reptilesCtrl.delete);
 router.get('/:id/edit', reptilesCtrl.edit)
 router.put('/:id', reptilesCtrl.update);
+router.post('/:id/comment', reptilesCtrl.comment)
 
 
 module.exports = router;

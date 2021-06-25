@@ -44,7 +44,15 @@
             <p class='type'>Hatch Date</p>
             <p class='attributes'><%= r.hatchDate %> </p>
           </div>
+          <div id='comment'>
+            <% r.comment.forEach(c => { %>
+              <p><%=c.comment%></p> 
+            <% }) %> 
+          </div>
           <div id='card-nav'>
+            <form action="/reptiles/<%=r.id%>/comment" method="POST" class='nav-button'>
+              <input type="text" name="comment" placeholder="Add notes"/>
+            </form>
               <a type="submit" href='/reptiles/<%=r._id%>/edit'>Edit</a>
             <form action="/reptiles/<%=r.id%>?_method=DELETE" class="nav-button" method="POST">
               <button type="submit">Delete</button>

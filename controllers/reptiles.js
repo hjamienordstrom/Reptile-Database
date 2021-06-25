@@ -8,6 +8,7 @@ module.exports = {
     delete:deleteReptile,
     edit,
     update:updateReptile,
+    comment
 }
 
 
@@ -31,11 +32,6 @@ function create(req,res){
     })
 }
 
-// function deleteReptile(req,res){
-//    Reptile.deleteOne(req.params.id);
-//    res.redirect('/reptiles')
-// }
-
 function deleteReptile(req, res) {
     console.log(req.params.id, "this is req.params");
     Reptile.findByIdAndDelete(req.params.id, function(err) {
@@ -57,11 +53,11 @@ function updateReptile(req,res){
     })
 }
 
-// function addNotes(req, res) {
-//     Reptile.findById(req.params.id, function(err, reptile) {
-//       reptile.cast.push(req.body.performerId);
-//       movie.save(function(err) {
-//         res.redirect(`/movies/${movie._id}`);
-//       });
-//     });
-//   }
+function comment(req, res) {
+    Reptile.findById(req.params.id, function(err, reptile) {
+      reptile.comment.push(req.body);
+      reptile.save(function(err) {
+        res.redirect(`/reptiles`);
+      });
+    });
+  }
