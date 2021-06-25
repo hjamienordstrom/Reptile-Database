@@ -5,8 +5,8 @@ Most reptile breeders use pen and paper to keep track of their reptiles, the pur
 <img src='public/images/homepage.png' width="450" height="350">
 <img src='public/images/Login.png' width="450" height="350">
 <img src='public/images/NewReptile.png' width="450" height="350">
-<img src='public/images/path.jpg' width="450" height="350">
-<img src='public/images/wireframe.jpg' width="450" height="350">
+<img src='public/images/path.JPG' width="450" height="350">
+<img src='public/images/wireframe.JPG' width="450" height="350">
 
 Technologies Used
     HTML-CSS-Javascript-Node.js-Express-MongoDB-Mongoose
