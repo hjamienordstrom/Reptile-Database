@@ -11,5 +11,6 @@ const db = mongoose.connection;
 
 // database connection event
 db.on('connected', function () {
+  console.log(process.env.DATABASE_URL)
   console.log(`Mongoose connected to: ${db.host}:${db.port}`);
 });
